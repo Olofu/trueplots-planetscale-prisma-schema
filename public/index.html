@@ -203,6 +203,36 @@
           ],
         },
         {
+          model: 'Post',
+          endpoints: [
+            {
+              method: 'GET',
+              url: '/api/post',
+              description: 'Get all post',
+            },
+            {
+              method: 'GET',
+              url: '/api/post?id=:id',
+              description: 'Get a single post',
+            },
+            {
+              method: 'POST',
+              url: '/api/postd',
+              description: 'Create a single post',
+            },
+            {
+              method: 'PUT',
+              url: '/api/post?id=:id',
+              description: 'Update a single post',
+            },
+            {
+              method: 'DELETE',
+              url: '/api/post?id=:id',
+              description: 'Delete a single post',
+            },
+          ],
+        },
+        {
           model: 'Link',
           endpoints: [
             {

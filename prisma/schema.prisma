@@ -40,6 +40,6 @@ model Post {
   content   String? @db.Text
   published Boolean  @default(false)
   authorId  String   @db.Text
-  author    @relation(fields: [authorId], references: [id])
+  author    Author?  @relation(fields: [authorId], references: [id])
   
 }

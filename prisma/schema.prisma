@@ -9,8 +9,7 @@ generator client {
 
 datasource db {
 provider = "mysql"
-  url      = "mysql://4rhirf3nrjeh:pscale_pw_oGS-xow_A0VptQ59PzqOs_fmwKIXWBcNqBAaVw4KZVE@apj49n4h2nnq.us-east-2.psdb.cloud/trueplots-planetscale-prisma-schema?sslaccept=strict
-"
+  url      = env("DATABASE_URL")
   referentialIntegrity = "prisma"
 }
 

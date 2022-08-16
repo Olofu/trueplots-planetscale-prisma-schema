@@ -1,5 +1,6 @@
 // Schema for a simple URL shortener
 // This schema tracks short links by associating them to a user
+// url      = env("DATABASE_URL")
 
 generator client {
   provider = "prisma-client-js"
@@ -8,7 +9,8 @@ generator client {
 
 datasource db {
 provider = "mysql"
-  url      = env("DATABASE_URL")
+  url      = "mysql://4rhirf3nrjeh:pscale_pw_oGS-xow_A0VptQ59PzqOs_fmwKIXWBcNqBAaVw4KZVE@apj49n4h2nnq.us-east-2.psdb.cloud/trueplots-planetscale-prisma-schema?sslaccept=strict
+"
   referentialIntegrity = "prisma"
 }
 
